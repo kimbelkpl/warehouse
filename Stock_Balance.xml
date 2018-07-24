@@ -46,5 +46,11 @@
 	   SELECT * FROM stock_balance WHERE warehouse_id=#value#;
 	   
 	   </select>
+	
+	<select id="selectstockbalancebyqty" parameterClass="java.lang.Integer"
+	   resultMap="Stock_BalancetResultMap">
+	   SELECT * FROM stock_balance WHERE qty &lt; #value#;
+	   
+	   </select>
 
 </sqlMap>    
