@@ -33,10 +33,6 @@
 		warehouse_id=#id#;
 	</update>
 	
-	<!-- <delete id="deleteWarehouse" parameterClass="java.lang.Integer">
-		DELETE FROM warehouse
-		WHERE warehouse_id=#value#;
-	</delete> -->
 	<update id="deleteWarehouse" parameterClass="WarehouseObject">
 		UPDATE warehouse
 		SET
